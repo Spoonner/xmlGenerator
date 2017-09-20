@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.00009999999747" prefWidth="282.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="org.spoonner.controller.TagNameDialogController">
+  <children>
+    <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox prefHeight="71.00006103515625" prefWidth="283.0">
+          <children>
+            <GridPane alignment="CENTER" prefWidth="283.0">
+              <children>
+                <Label alignment="CENTER" text="Тэг" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label fx:id="textLabel" text="Текст" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="tagName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <TextField fx:id="textValue" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="94.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="189.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+              <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </VBox.margin>
+            </GridPane>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+    <HBox alignment="CENTER" layoutX="0.0" layoutY="60.0" prefHeight="100.0" prefWidth="283.0">
+      <children>
+        <Button fx:id="okButton" defaultButton="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Apply">
+          <HBox.margin>
+            <Insets right="30.0" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="cancelButton" cancelButton="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Cancel" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

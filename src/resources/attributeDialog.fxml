@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:controller="org.spoonner.controller.AttributeEditorController" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <VBox prefHeight="299.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox prefHeight="42.0" prefWidth="448.0">
+          <children>
+            <Button fx:id="addRowButton" mnemonicParsing="false" text="Add" />
+            <Button mnemonicParsing="false" text="Button" />
+          </children>
+        </HBox>
+        <HBox prefHeight="200.0" prefWidth="448.0">
+          <children>
+            <ScrollPane fx:id="scrollPane" content="$null" prefHeight="200.0" prefWidth="600.0"/>
+          </children>
+        </HBox>
+        <HBox prefHeight="57.0" prefWidth="448.0">
+          <children>
+            <Button mnemonicParsing="false" text="Apply" fx:id="okButton" />
+            <Button mnemonicParsing="false" text="Cancel" fx:id="cancelButton"/>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
